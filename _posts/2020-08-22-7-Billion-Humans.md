@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "7 BillionHumans Solution"
+title: "7 BillionHumans Solutions"
 categories:
   - 7 Billion Humans
 tags:
