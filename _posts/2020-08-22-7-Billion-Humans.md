@@ -90,9 +90,9 @@ if c == datacube:
     b:
     step s
     if s == hole:
-      drop
+        drop
     else:
-      jump b
+        jump b
   endif
 else:
     step s
@@ -167,22 +167,22 @@ else:
     if nw != hole and
        s  != wall:
         step nw
-    	jump b
+        jump b
     endif
     if sw != hole and
        s  != wall:
         step sw
-    	jump c
+        jump c
     endif
     if s == wall:
-    	step n
-    	step nw
-    	jump d
+        step n
+        step nw
+        jump d
     endif
     if ne == hole and
        s  != wall:
         step sw
-    	jump e
+        jump e
     endif
 endif
 {% endhighlight %}
@@ -289,10 +289,10 @@ if c == datacube:
     pickUp c
     b:
     if s == shredder:
-    	giveTo s
+        giveTo s
     else:
-    	step s
-    	jump b
+        step s
+        jump b
     endif
 endif
 step n
@@ -312,9 +312,9 @@ if n == datacube:
         giveTo s
         step n
     else:
-    	step s
-    	step s
-    	jump b
+        step s
+        step s
+        jump b
     endif
 endif
 jump a
@@ -330,7 +330,7 @@ if c == a datacube:
     b:
     step e
     if s == shredder:
-    	giveTo s
+        giveTo s
     endif
     jump b
 endif
@@ -438,14 +438,14 @@ if s == printer:
     takeFrom s
     b:
     if my item >= 50:
-    	step nw
-    	c:
-    	if n == wall or
-    	   n == worker:
-    	    end
-    	endif
-    	step n
-    	jump c
+        step nw
+        c:
+        if n == wall or
+    	     n == worker:
+    	      end
+    	  endif
+        step n
+        jump c
     endif
     giveTo sw
     takeFrom se
@@ -453,7 +453,7 @@ if s == printer:
 else:
     d:
     if s != worker:
-    	jump a
+        jump a
     endif
     jump d
 endif
@@ -522,7 +522,7 @@ endif
 if s == shredder:
     b:
     if my item == datacube:
-    	giveTo s
+        giveTo s
     endif
     jump b
 endif
