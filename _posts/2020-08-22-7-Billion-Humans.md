@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "7-Billion_Humans_Solution"
+title: "7 BillionHumans Solution"
 categories:
   - 7 Billion Humans
 tags:
   - 7 Billion Humans
   - Game
+last_modified_at: 2020-08-22-22-24-50
 ---
 
 <strong>Year 02:</strong> Welcome, New Employees (both)
@@ -43,9 +44,9 @@ jump a
 
 {% highlight txt %}
 if w == datacube:
-	a:
-	step w
-	jump a
+    a:
+    step w
+    jump a
 endif
 b:
 step e
@@ -74,7 +75,7 @@ a:
 step s
 pickUp c
 if s == hole:
-	drop
+    drop
 endif
 jump a
 {% endhighlight %}
@@ -85,17 +86,17 @@ jump a
 {% highlight txt %}
 a:
 if c == datacube:
-	pickUp c
-	b:
-	step s
-	if s == hole:
-		drop
-	else:
-		jump b
-	endif
+    pickUp c
+    b:
+    step s
+    if s == hole:
+      drop
+    else:
+      jump b
+  endif
 else:
-	step s
-	jump a
+    step s
+    jump a
 endif
 {% endhighlight %}
 
@@ -106,7 +107,7 @@ endif
 pickUp s
 a:
 if nw == datacube:
-	drop
+    drop
 endif
 jump a
 {% endhighlight %}
@@ -117,17 +118,17 @@ jump a
 {% highlight txt %}
 a:
 if c == 1:
-	step n
+    step n
 endif
 if c == 2:
-	step e
+    step e
 endif
 if c == 3:
-	step s
+    step s
 endif
 if c == 4 or
    c != datacube
-	step w
+    step w
 endif
 jump a
 {% endhighlight %}
@@ -141,48 +142,48 @@ step w
 a:
 step w
 if c != datacube:
-	jump a
+    jump a
 endif
 if c == datacube and
    w != hole:
-	step w
-	b:
-	c:
-	d:
-	e:
-	step sw
-	step s
-	step sw
-	step w
-	step w
-	step w
-	step nw
-	step n
-	step n
-	step n
-	step n
-	step nw
+    step w
+    b:
+    c:
+    d:
+    e:
+    step sw
+    step s
+    step sw
+    step w
+    step w
+    step w
+    step nw
+    step n
+    step n
+    step n
+    step n
+    step nw
 else:
-	if nw != hole and
-	   s  != wall:
-	    step nw
-		jump b
-	endif
-	if sw != hole and
-	   s  != wall:
-	    step sw
-		jump c
-	endif
-	if s == wall:
-		step n
-		step nw
-		jump d
-	endif
-	if ne == hole and
-	   s  != wall:
-	    step sw
-		jump e
-	endif
+    if nw != hole and
+       s  != wall:
+        step nw
+    	jump b
+    endif
+    if sw != hole and
+       s  != wall:
+        step sw
+    	jump c
+    endif
+    if s == wall:
+    	step n
+    	step nw
+    	jump d
+    endif
+    if ne == hole and
+       s  != wall:
+        step sw
+    	jump e
+    endif
 endif
 {% endhighlight %}
 
@@ -197,7 +198,7 @@ a:
 step s
 step s
 if c == nothing:
-	drop
+    drop
 endif
 jump a
 {% endhighlight %}
@@ -225,11 +226,11 @@ a:
 if w == wall or
    sw == worker:
     dtep n
-	drop
+    drop
 endif
 if nw == worker:
-	step s
-	drop
+    step s
+    drop
 endif
 jump a
 {% endhighlight %}
@@ -272,10 +273,10 @@ giveTo s
 
 {% highlight txt %}
 if s == datacube:
-	step s
-	pickUp c
-	step s
-	giveTo s
+    step s
+    pickUp c
+    step s
+    giveTo s
 endif
 {% endhighlight %}
 
@@ -285,14 +286,14 @@ endif
 {% highlight txt %}
 a:
 if c == datacube:
-	pickUp c
-	b:
-	if s == shredder:
-		giveTo s
-	else:
-		step s
-		jump b
-	endif
+    pickUp c
+    b:
+    if s == shredder:
+    	giveTo s
+    else:
+    	step s
+    	jump b
+    endif
 endif
 step n
 jump a
@@ -305,16 +306,16 @@ jump a
 a:
 step n
 if n == datacube:
-	pickUp n
-	b:
-	if s == shredder:
-		giveTo s
-		step n
-	else:
-		step s
-		step s
-		jump b
-	endif
+    pickUp n
+    b:
+    if s == shredder:
+        giveTo s
+        step n
+    else:
+    	step s
+    	step s
+    	jump b
+    endif
 endif
 jump a
 {% endhighlight %}
@@ -325,13 +326,13 @@ jump a
 {% highlight txt %}
 a:
 if c == a datacube:
-	pickUp c
-	b:
-	step e
-	if s == shredder:
-		giveTo s
-	endif
-	jump b
+    pickUp c
+    b:
+    step e
+    if s == shredder:
+    	giveTo s
+    endif
+    jump b
 endif
 step s
 jump a
@@ -345,7 +346,7 @@ step s
 a:
 step s
 if c != datacube:
-	jump a
+    jump a
 endif
 pickUp c
 step e
@@ -354,7 +355,7 @@ step e
 b:
 step e
 if s == a shredder:
-	giveTo s
+    giveTo s
 endif
 jump b
 {% endhighlight %}
@@ -374,8 +375,8 @@ pickUp w
 step sw
 a:
 if s == a shredder:
-	giveTo s
-	end
+    giveTo s
+    end
 endif
 step se
 jump a
@@ -399,14 +400,14 @@ jump a
 pickUp s
 a:
 if se == hole:
-	step s
-	b:
-	if w == hole or
-	   w == datacube:
-	    drop
-	endif
-	step w
-	jump b
+    step s
+    b:
+    if w == hole or
+       w == datacube:
+        drop
+    endif
+    step w
+    jump b
 endif
 step e
 jump a
@@ -421,8 +422,8 @@ step s
 a:
 takeFrom s
 if my item < 50:
-	giveTo sw
-	step e
+    giveTo sw
+    step e
 endif
 jump a
 {% endhighlight %}
@@ -434,32 +435,32 @@ jump a
 a:
 step s
 if s == printer:
-	takeFrom s
-	b:
-	if my item >= 50:
-		step nw
-		c:
-		if n == wall or
-		   n == worker:
-		    end
-		endif
-		step n
-		jump c
-	endif
-	giveTo sw
-	takeFrom se
-	jump b
+    takeFrom s
+    b:
+    if my item >= 50:
+    	step nw
+    	c:
+    	if n == wall or
+    	   n == worker:
+    	    end
+    	endif
+    	step n
+    	jump c
+    endif
+    giveTo sw
+    takeFrom se
+    jump b
 else:
-	d:
-	if s != worker:
-		jump a
-	endif
-	jump d
+    d:
+    if s != worker:
+    	jump a
+    endif
+    jump d
 endif
 {% endhighlight %}
 
 
-<strong>Year 22:</storng> Number Royale (both)
+<strong>Year 22:</strong> Number Royale (both)
 
 {% highlight txt %}
 pickUp s
@@ -467,8 +468,8 @@ a:
 if my item < e or
    my item < w:
     b:
-	step s
-	jump b
+    step s
+    jump b
 endif
 step e
 jump a
@@ -481,10 +482,10 @@ jump a
 pickUp s
 a:
 if my item > e:
-	step e
+    step e
 endif
 if my item < w:
-	step w
+    step w
 endif
 jump a
 {% endhighlight %}
@@ -497,8 +498,8 @@ a:
 if s == hole or
    s == printer:
     takeFrom s
-	giveTo e
-	jump a
+    giveTo e
+    jump a
 endif
 b:
 if s == shredder and
@@ -513,21 +514,21 @@ jump b
 
 {% highlight txt %}
 if s == printer:
-	a:
-	takeFrom s
-	giveTo e
-	jump a
+    a:
+    takeFrom s
+    giveTo e
+    jump a
 endif
 if s == shredder:
-	b:
-	if my item == datacube:
-		giveTo s
-	endif
-	jump b
+    b:
+    if my item == datacube:
+    	giveTo s
+    endif
+    jump b
 endif
 c:
 if my item == datacube:
-	giveTo e
+    giveTo e
 endif
 jump c
 {% endhighlight %}
