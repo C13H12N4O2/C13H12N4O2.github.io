@@ -188,7 +188,7 @@ endif
 {% endhighlight %}
 
 
-<storng>Year 11:</strong> Injection Sites 1 (size)
+<strong>Year 11:</strong> Injection Sites 1 (size)
 
 {% highlight txt %}
 pickUp s
@@ -204,7 +204,7 @@ jump a
 {% endhighlight %}
 
 
-<storng>Year 11:</strong> Injection Sites 1 (speed)
+<strong>Year 11:</strong> Injection Sites 1 (speed)
 
 {% highlight txt %}
 pickUp s
