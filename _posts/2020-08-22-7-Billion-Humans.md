@@ -6,7 +6,7 @@ categories:
 tags:
   - 7 Billion Humans
   - Game
-last_modified_at: 2020-08-22-22-24-50
+last_modified_at: 2020-08-22-23-58-45
 ---
 
 <strong>Year 02:</strong> Welcome, New Employees (both)
@@ -596,7 +596,7 @@ if w == hole and
    e == hole:
     b:
     if my item == datacube:
-    giveTo n
+        giveTo n
     endif
     jump b
 endif
@@ -606,25 +606,25 @@ if w == worker and
     c:
     d:
     if my item == datacube:
-		    if my item >= 50:
+        if my item >= 50:
             giveTo e
         endif
-		    if my item < 50:
-			      giveTo w
-		    endif
-	  endif
-	  jump c
+        if my item < 50:
+	    giveTo w
+        endif
+    endif
+    jump c
 endif
 if n == hole and
    s == hole:
-   	jump d
+    jump d
 endif
 if s == shredder:
     e:
     if my item == datacube:
-		    giveTo s
+        giveTo s
     endif
-	  jump e
+    jump e
 endif
 {% endhighlight %}
 
@@ -808,7 +808,7 @@ b:
 step n
 if n != wall:
     if c == datacube and
-        mem 1 >= c:
+       mem 1 >= c:
         mem 1 = set c
     endif
     jump b
