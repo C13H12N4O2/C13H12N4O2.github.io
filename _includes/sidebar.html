@@ -1,15 +1,21 @@
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<div id="sidebar">
+  <header>
+    <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
+      <a href="{{ "/" | relative_url }}">
+        {% unless page.url == "/" %}
+          <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
+        {% endunless %}
+        {{ site.title }}
+      </a>
+    </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
+    <p class="lead">{{ site.description }}</p>
+  </header>
+  {% include sidebar-nav-links.html %}
 
-<div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
-    <p>{{ site.description >></p>
-  </div>
-  
-  <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.url %} active{% endif %}" href="{{ site.url }}/">Home</a>
-  </nav>
+  {% if site.version %}
+    <span class="site-version">Currently v{{ site.version }}</span>
+  {% endif %}
+
+  {% include sidebar-icon-links.html %}
+  {% include copyright.html %}
 </div>
-
-
-
-
