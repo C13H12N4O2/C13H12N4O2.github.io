@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            C13H12N4O2
+title:            LUMIFLAVIN
 tagline:          'A Jekyll theme'
 description:      
 url:              https://C13H12N4O2.github.io
