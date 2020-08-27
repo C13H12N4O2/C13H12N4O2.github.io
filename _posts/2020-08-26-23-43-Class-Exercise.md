@@ -6,7 +6,7 @@ categories:
 tags:
   - IT114
   - JAVA
-last_modified_at: 2020-08-27-23-44
+last_modified_at: 2020-08-27-23-47
 ---
 
 <strong>Class Exercise 1:</strong> Print messages
@@ -796,7 +796,7 @@ public class CommandLineTest {
 {% highlight java %}
 public class TwoDArray {
   public static void main(String[] args) {
-    int[][] sudoku = {{1, 2, 3}, {2, 3, 1}, {3, 2, 1}};
+    int[][] sudoku = {% raw %}{{1, 2, 3}, {2, 3, 1}, {3, 2, 1}}{% endraw %};
 		
     for (int i = 0; i < sudoku.length; i++) {
       for (int j = 0; j < sudoku[i].length; j++) {
