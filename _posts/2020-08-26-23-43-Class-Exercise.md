@@ -791,25 +791,7 @@ public class CommandLineTest {
 {% endhighlight %}
 
 
-<strong>Class Exercise 23:</strong> 2D array
 
-{% highlight java %}
-public class TwoDArray {
-  public static void main(String[] args) {
-    int[][] sudoku = {{1, 2, 3}, {2, 3, 1}, {3, 2, 1}};
-    
-    for (int i = 0; i < sudoku.length; i++) {
-      for (int j = 0; j < sudoku[i].length; j++) {
-	System.out.print(sudoku[i][j] + " ");
-      }
-	
-      System.out.println();
-    }
-    
-    System.out.println();
-  }
-}
-{% endhighlight %}
 
 
 <strong>Class Exercise 24:</strong> Array list practice
