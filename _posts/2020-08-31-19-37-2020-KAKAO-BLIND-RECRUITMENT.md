@@ -6,7 +6,7 @@ categories:
 tags:
   - C++
   - Kakao Blind Recuitment
-last_modified_at: 2020-08-31-20-26
+last_modified_at: 2020-08-31-20-28
 ---
 
 <strong> 문제 1:</strong> 문자열 압축
@@ -42,6 +42,7 @@ s는 알파벳 소문자로만 이루어져 있습니다.
 
 <strong>입출력 예</strong>
 |   s       |result|
+|-----------|------|
 |"aabbaccc" | 7    |
 |"ababcdcdababcdcd" | 9 |
 |"abcabcdede" | 8|
