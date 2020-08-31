@@ -6,7 +6,7 @@ categories:
 tags:
   - C++
   - Kakao Blind Recuitment
-last_modified_at: 2020-08-31-20-20
+last_modified_at: 2020-08-31-20-23
 ---
 
 <strong> 문제 1:</strong> 문자열 압축
@@ -39,15 +39,15 @@ s의 길이는 1 이상 1,000 이하입니다.
 s는 알파벳 소문자로만 이루어져 있습니다.
 {% endhighlight %}
 
----
-입출력 예
-s result
-"aabbaccc" 7
-"ababcdcdababcdcd" 9
-"abcabcdede" 8
-"abcabcabcabcdededededede" 14
-"xababcdcdababcdcd" 17
----
+
+|   입출력    | 예   |
+|   s       |result|
+|"aabbaccc" | 7    |
+|"ababcdcdababcdcd" | 9 |
+|"abcabcdede" | 8|
+|"abcabcabcabcdededededede" | 14 |
+|"xababcdcdababcdcd" | 17 |
+
 
 <strong>입출력 예에 대한 설명</strong>
 {% highlight txt %}
