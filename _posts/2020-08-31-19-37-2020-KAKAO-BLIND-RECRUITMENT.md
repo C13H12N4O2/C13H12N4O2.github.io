@@ -418,7 +418,7 @@ key와 lock의 원소는 0 또는 1로 이루어져 있습니다.
 
 <strong>입출력 예에 대한 설명</strong>
 
-![자물쇠.jpg](https://github.com/C13H12N4O2/C13H12N4O2.github.io/blob/master/assets/images/2020-08-31-19-37-2020-KAKAO-BLIND-RECRUITMENT/자물쇠.jpg)
+![자물쇠.jpg](/assets/images/2020-08-31-19-37-2020-KAKAO-BLIND-RECRUITMENT/자물쇠.jpg)
 
 {% highlight txt %}
 key를 시계 방향으로 90도 회전하고, 오른쪽으로 한 칸, 아래로 한 칸 이동하면 lock의
