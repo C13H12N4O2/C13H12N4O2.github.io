@@ -7,7 +7,7 @@ tags:
   - C++
   - 2018 Kakao Blind Recruitment
   - Programmers
-last_modified_at: 2020-09-04-20-20
+last_modified_at: 2020-09-04-20-23
 ---
 
 <strong> 문제 1:</strong> 비밀지도
@@ -31,7 +31,7 @@ last_modified_at: 2020-09-04-20-20
    부호화했을 때 얻어지는 이진수에 해당하는 값의 배열이다.
 {% endhighlight %}
 
-![crane_game_101.png](/assets/images/2020-09-03-23-33-2019-카카오-개발자-겨울-인턴십/crane_game_101.png)
+![secret1.png](/assets/images/2020-09-04-20-20-2018-Kakao-Blind-Recruitment/secret1.png)
 
 {% highlight txt %}
 네오가 프로도의 비상금을 손에 넣을 수 있도록, 비밀지도의 암호를 해독하는 작업을
