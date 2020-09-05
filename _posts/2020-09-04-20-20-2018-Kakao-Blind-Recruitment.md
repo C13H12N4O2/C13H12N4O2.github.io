@@ -7,7 +7,7 @@ tags:
   - C++
   - 2018 Kakao Blind Recruitment
   - Programmers
-last_modified_at: 2020-09-05-23-15
+last_modified_at: 2020-09-05-23-17
 ---
 
 <strong> 문제 1:</strong> 비밀지도
@@ -135,7 +135,7 @@ vector<string> solution(int n, vector<int> arr1, vector<int> arr2) {
 카카오톡에 뜬 네 번째 별! 심심할 땐? 카카오톡 게임별~
 {% endhighlight %}
 
-![secret1.png](/assets/images/2020-09-04-20-20-2018-Kakao-Blind-Recruitment/secret1.png)
+![secret1.png](/assets/images/2020-09-04-20-20-2018-Kakao-Blind-Recruitment/gamestar.png)
 
 {% highlight txt %}
 카카오톡 게임별의 하반기 신규 서비스로 다트 게임을 출시하기로 했다. 다트 게임은
