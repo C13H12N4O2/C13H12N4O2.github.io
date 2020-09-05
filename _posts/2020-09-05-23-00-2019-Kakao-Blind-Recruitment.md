@@ -7,14 +7,14 @@ tags:
   - C++
   - 2019 Kakao Blind Recruitment
   - Programmers
-last_modified_at: 2020-09-05-23-00
+last_modified_at: 2020-09-05-23-03
 ---
 
 <strong> 문제 1:</strong> 실패율
 
 <strong>문제 설명</strong>
 
-![crane_game_101.png](/assets/images/2020-09-03-23-33-2019-카카오-개발자-겨울-인턴십/crane_game_101.png)
+![crane_game_101.png](/assets/images/2020-09-05-23-00-2019-Kakao-Blind-Recruitment/사천성.png)
 
 {% highlight txt %}
 슈퍼 게임 개발자 오렐리는 큰 고민에 빠졌다. 그녀가 만든 프랜즈 오천성이 대성공을
