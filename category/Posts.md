@@ -1,4 +1,4 @@
 ---
 layout: category
-title: Posts
+title: Kakao Blind Recuitment
 ---
