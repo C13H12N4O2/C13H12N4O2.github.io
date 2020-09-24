@@ -1,4 +1,3 @@
-
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -92,44 +91,34 @@
                     
           ran = Math.floor(Math.random() * 6);
           console.log(ran);
+          material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
           switch (ran) {
             case 0:
                 geometry = new THREE.BoxBufferGeometry( 5, 5, 5 );
-                material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
-                object = new THREE.Mesh( geometry, material );
                 ++totalCube;
                 break;
             case 1:
                 geometry = new THREE.SphereBufferGeometry( 2.5, 32, 32 );
-                material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
-                object = new THREE.Mesh( geometry, material );
                 ++totalSphere;
                 break;
             case 2:
                 geometry = new THREE.TorusKnotBufferGeometry( 1.5, 1.0, 100, 100 );
-                material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
-                object = new THREE.Mesh( geometry, material );
                 ++totalTorusKnot;
                 break;
             case 3:
                 geometry = new THREE.OctahedronBufferGeometry( 2.5 );
-                material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
-                object = new THREE.Mesh( geometry, material );
                 ++totalOctahedron;
                 break;
             case 4:
                 geometry = new THREE.ConeBufferGeometry( 2.5, 5 );
-                material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
-                object = new THREE.Mesh( geometry, material );
                 ++totalCone;
                 break;
             case 5:
                 geometry = new THREE.RingBufferGeometry( 1.25, 2.5, 32 );
-                material = new THREE.MeshStandardMaterial( { color: Math.random() * 0xffffff } );
-                object = new THREE.Mesh( geometry, material );
                 ++totalRing;
                 break;
            }
+           object = new THREE.Mesh( geometry, material );
            object.position.set(intersects[0].point.x, intersects[0].point.y, intersects[0].point.z);
            scene.add(object);
            console.log('The number of placed cubes', totalCube);
